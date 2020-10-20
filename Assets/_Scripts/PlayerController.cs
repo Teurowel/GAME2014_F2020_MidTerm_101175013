@@ -3,7 +3,7 @@
 //Student ID : 101175013
 //Date last modified : October, 20. 2020
 //Program description : This class will control player
-//Revision history : October, 20. 2020 : Added verticalBondarySpeed, verticalSpeed, verticalTValue
+//Revision history : October, 20. 2020 : Added verticalBondary, verticalSpeed, verticalTValue
 //                                       Changed _Move, _CheckBounds to adapt vertical movement
 
 using System.Collections;

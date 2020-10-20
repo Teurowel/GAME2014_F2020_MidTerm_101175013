@@ -1,11 +1,19 @@
-﻿using System.Collections;
+﻿//Source file name : BulletController.cs
+//Student name : Doosung Jang
+//Student ID : 101175013
+//Date last modified : October, 20. 2020
+//Program description : This class will control bullet
+//Revision history : October, 20. 2020 : Added horizontalSpeed, horizontalBoundary
+//                                       Changed _Move, _CheckBounds to adapt horizontal movement
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class BulletController : MonoBehaviour, IApplyDamage
 {
-    public float verticalSpeed;
-    public float verticalBoundary;
+    public float horizontalSpeed;
+    public float horizontalBoundary;
     public BulletManager bulletManager;
     public int damage;
     
@@ -24,12 +32,12 @@ public class BulletController : MonoBehaviour, IApplyDamage
 
     private void _Move()
     {
-        transform.position += new Vector3(0.0f, verticalSpeed, 0.0f) * Time.deltaTime;
+        transform.position += new Vector3(horizontalSpeed, 0.0f, 0.0f) * Time.deltaTime;
     }
 
     private void _CheckBounds()
     {
-        if (transform.position.y > verticalBoundary)
+        if (transform.position.x > horizontalBoundary)
         {
             bulletManager.ReturnBullet(gameObject);
         }
