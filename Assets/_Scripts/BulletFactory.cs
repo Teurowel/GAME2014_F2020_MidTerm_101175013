@@ -1,7 +1,16 @@
-﻿using System.Collections;
+﻿//Source file name : BulletFactory.cs
+//Student name : Doosung Jang
+//Student ID : 101175013
+//Date last modified : October, 20. 2020
+//Program description : Factory design pattern for creation of bullet
+//Revision history : October, 20. 2020 : created
+
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Bullet factory class
 [System.Serializable]
 public class BulletFactory : MonoBehaviour
 {

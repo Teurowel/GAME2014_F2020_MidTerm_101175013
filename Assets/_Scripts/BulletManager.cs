@@ -1,4 +1,11 @@
-﻿using System.Collections;
+﻿//Source file name : BulletManager.cs
+//Student name : Doosung Jang
+//Student ID : 101175013
+//Date last modified : October, 20. 2020
+//Program description : This class will manage bullet using bullet pool and bullet factory
+//Revision history : October, 20. 2020 : created
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
